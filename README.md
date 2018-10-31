@@ -8,7 +8,7 @@ BC-flask python
 <li> // Dentro de Entornos activamos  </li>
 <li> activar entorno: source .venv/bin/activate</li>
 </ul>
-<li> Un vez dentro del entorno virtual descargamos las librerias.</li>
+<li> Un vez dentro del entorno virtual descargamos las librerias y podemos desplazarnos la carpeta donde se encuetra el proyecto, el orden no importa siempre y cuando estemos dentro del entorno virtual</li>
 <ul>
 <li> Flask: pip3 install flask </li>
 <li> SQLAlchemy: pip install flask-sqlalchemy  </li>
