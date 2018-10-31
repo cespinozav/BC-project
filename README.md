@@ -1,5 +1,5 @@
 # BC-project
-#BC-flask python
+BC-flask python
 Desarrollar el programa en un entorno virtual de python:
 descargar: sudo apt-get install python-virtualenv virtualenv
 crear entorno virtual: virtualenv --python=python3 .venv //recomiendo crearlo en una carpeta del home con nombre Entornos
