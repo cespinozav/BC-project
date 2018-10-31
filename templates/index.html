@@ -1,0 +1,28 @@
+<doctype html>
+<head>
+    <title>Proyecto Especies Mosquitos</title>
+</head>
+
+<h2>Proyecto Especies Mosquitos</h2>
+
+<p><p>
+<a href="{{ url_for('.new_album') }}"> Nuevo Registro </a>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+
+{% from "_formhelpers.html" import render_field %}
+<form method=post>
+  <dl>
+    {{ render_field(form.select) }}
+    <p>
+    {{ render_field(form.search) }}
+  </dl>
+  <p><input type=submit value=Search>
+</form>
